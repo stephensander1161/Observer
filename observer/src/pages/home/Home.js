@@ -1,8 +1,18 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import '../../App.css'
+import HeroSection from '../../components/HeroSection'
+import Cards from '../../components/Cards'
+import Footer from '../../components/Footer'
+function Home() {
+	return (
+    <>
+    <HeroSection />
+    <Cards />
+    <Footer />
+    		
 
-class Home extends React.Component {
-        render() {
-          return <h1>HOME PAGE</h1>;
-        }
-      }
-export default Home;
+    </>
+  )
+  }
+
+export default Home

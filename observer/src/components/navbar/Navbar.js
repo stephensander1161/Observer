@@ -1,45 +1,91 @@
-import React, { Component } from 'react';
-import { MenuItems } from "./MenuItems"
-import { Button } from "../Button"
-import './Navbar.css'
+import React, { useState, useEffect } from 'react';
+import { Button } from '../Button';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
+function Navbar() {
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
 
-class NavBar extends Component {
-    state = { clicked: false}
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
     }
+  };
 
+  useEffect(() => {
+    showButton();
+  }, []);
 
-    render() {
-        return(
-            <nav className="NavbarItems">
-                <div className="navbar-container">
-                <h1 className="navbar-logo">&nbsp;Observer</h1>
-                <h4 className="navbar-subtitle">2020</h4>
-                <div className="menu-icon" onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+  window.addEventListener('resize', showButton);
 
-                    
-                </div>
-                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-                    {MenuItems.map((item, index) => {
-                        return (
-                            <li key={index}>
-                                <a className={item.cName} href={item.url}>
-                                    {item.title}
-                                </a>
-                            </li> 
-                        )
-                    })}
-                </ul>
-                </div>
-            </nav>
+  return (
+    <>
+      <nav className='navbar'>
+        <div className='navbar-container'>
+          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+                      <i className="far fa-eye"></i>
 
-        )
-    }
-
+            Observer
+            
+          </Link>
+          <div className='menu-icon' onClick={handleClick}>
+            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          </div>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+            <li className='nav-item'>
+              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                Home
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/stills'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Stills
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/on-set'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                On Set
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/trailers'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Trailers
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/cast-and-crew'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Cast and Crew
+              </Link>
+            </li>
+            
+          </ul>
+          {button && <Button buttonStyle='btn--outline'>Contact</Button>}
+        </div>
+      </nav>
+    </>
+  );
 }
 
-export default NavBar
+export default Navbar;
