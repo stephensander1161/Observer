@@ -70,18 +70,10 @@ function Navbar() {
                 Trailers
               </Link>
             </li>
-            <li className='nav-item'>
-              <Link
-                to='/cast-and-crew'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Cast and Crew
-              </Link>
-            </li>
+            
             
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Contact</Button>}
+          {button && <Link to='/contact'><Button buttonStyle='btn--outline'>Contact</Button></Link>}
         </div>
       </nav>
     </>

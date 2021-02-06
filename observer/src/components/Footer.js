@@ -18,11 +18,7 @@ function Footer() {
 			</section>
 			<div className="footer-links">
 				<div className="footer-link-wrapper">
-					<div className="footer-link-items">
-						<h2>About Us</h2>
-						<Link to="/contact">How it works</Link>
-						<Link to="/contact">How it works</Link>
-					</div>
+					<div className="footer-link-items" />
 				</div>
 			</div>
 			<section className="social-media">
@@ -32,7 +28,7 @@ function Footer() {
 							OBSERVER <i className="far fa-eye" />
 						</Link>
 					</div>
-					<small className="website-rights">OBS © 2020</small>
+					<small className="website-rights">OBSERVER © 2021</small>
 					<div className="social-icons">
 						<Link className="social-icon-link facebook" to="/" target="_blank" aria-label="Facebook">
 							<i className="fab fa-facebook-f" />

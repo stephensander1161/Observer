@@ -1,8 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
+import OnSetCards from '../../components/OnSetCards';
+import Footer from '../../components/Footer';
 
-class OnSet extends React.Component {
-        render() {
-          return <h1>OnSet PAGE</h1>;
-        }
-      }
+function OnSet() {
+	return (
+		<div>
+			<OnSetCards />
+			<Footer />
+		</div>
+	);
+}
+
 export default OnSet;
