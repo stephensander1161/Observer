@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function HeroSection() {
 	return (
 		<div className="hero-container">
-			<h1>In 2021</h1>
+			<h1>In 2022</h1>
 			<p>What are you afraid of?</p>
 			<div className="hero-btns">
 				<Link to="/trailers">
