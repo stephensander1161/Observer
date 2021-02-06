@@ -71,7 +71,8 @@ function Navbar() {
               </Link>
             </li>
             <li>
-                       <Link to='/contact'><Button className="btn_contact" buttonStyle='btn--outline'>Contact</Button></Link>
+                       <Link to='/contact' className='nav-links'
+                onClick={closeMobileMenu}><Button className="btn_contact" buttonStyle='btn--outline'>Contact</Button></Link>
 
             </li>
 
