@@ -7,7 +7,6 @@ function Home() {
 	return (
     <>
     <HeroSection />
-    <img className="pic" src="/images/still-26.jpg" />
     <Footer />
     		
 

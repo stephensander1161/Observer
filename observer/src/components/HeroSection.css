@@ -6,11 +6,25 @@ video {
 	z-index: -1;
 }
 
+.pic {
+	background-repeat: no-repeat;
+	background-size: 100vw auto;
+	height: 50%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+	border: 5px solid black;
+	margin-bottom: -50px;
+}
+
 .hero-container {
 	background-image: url('/images/contact-blond.jpg');
 	background-repeat: no-repeat;
-	margin-botton: -100px;
+	margin-bottom: -100px;
 	background-size: 100vw auto;
+	background-color: black;
 
 	height: 100vh;
 	width: 100%;
