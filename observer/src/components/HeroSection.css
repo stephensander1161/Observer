@@ -9,7 +9,7 @@ video {
 .hero-container {
 	background-image: url('/images/contact-blond.jpg');
 	background-repeat: no-repeat;
-
+	margin-botton: -100px;
 	background-size: 100vw auto;
 
 	height: 100vh;

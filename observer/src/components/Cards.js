@@ -52,7 +52,6 @@ function Cards() {
 						<CardItem src="images/still-25.jpg" text="" label="Observer Stills" path="/contact" />
 					</ul>
 					<ul className="cards__items">
-						<CardItem src="images/still-26.jpg" text="" label="Observer Stills" path="/contact" />
 						<CardItem src="images/still-27.jpg" text="" label="Observer Stills" path="/contact" />
 					</ul>
 					<ul className="cards__items">
