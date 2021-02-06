@@ -16,8 +16,6 @@ function HeroSection() {
 					</Button>
 				</Link>
 			</div>
-			    <img className="pic" src="/images/still-26.jpg" />
-
 		</div>
 	);
 }
