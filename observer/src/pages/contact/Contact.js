@@ -15,10 +15,22 @@ function Contact() {
     emailjs.sendForm('service_krhsxmg', 'template_izipfw9', e.target, 'user_AcjqpwbLJL2GOQ6YpqZ9g')
       .then((result) => {
           console.log(result.text);
+		  alert('Message Sent!')
       }, (error) => {
           console.log(error.text);
       });
-	  e.target.reset();
+
+
+	  setMessageData({
+		  name: '',
+		  email: '',
+		  subject: '',
+		  message: '',
+
+	  })
+
+
+
   } 
 
 
