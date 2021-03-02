@@ -28,7 +28,7 @@ function Footer() {
 							OBSERVER <i className="far fa-eye" />
 						</Link>
 					</div>
-					<small className="website-rights">OBSERVER © 2021</small>
+					<small className="website-rights">OBSERVER © 2021 Website Created by Stephen Sander</small>
 					<div className="social-icons">
 						<Link className="social-icon-link facebook" to="/" target="_blank" aria-label="Facebook">
 							<i className="fab fa-facebook-f" />
