@@ -25,10 +25,10 @@ function Footer() {
 				<div className="social-media-wrap">
 					<div className="footer-logo">
 						<Link to="/" className="social-logo">
-							OBSERVER <i className="far fa-eye" />
+							OBSERVER 2021<i className="far fa-eye" />
 						</Link>
 					</div>
-					<small className="website-rights">OBSERVER © 2021 Website Created by Stephen Sander</small>
+					<small className="website-rights">Website Created by Stephen Sander</small>
 					<div className="social-icons">
 						<Link className="social-icon-link facebook" to="/" target="_blank" aria-label="Facebook">
 							<i className="fab fa-facebook-f" />
